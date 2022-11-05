@@ -17,7 +17,7 @@ def main():
     # valid input is entered
     if good_looking in yesNo and rich in yesNo:
         # if user is good looking
-        if good_looking == "y"  or good_looking == "Y":
+        if good_looking == "y" or good_looking == "Y":
             is_good_looking = True
 
         # if user is rich
@@ -27,14 +27,15 @@ def main():
         # checks if user can date grandchild
         if is_rich or is_good_looking:
             print("You can date our grandchild :)")
-        
+
         else:
             print("YOU CANNOT DATE OUR GRANDCHILD!")
-    
+
     else:
         print("Please enter either y or n.")
-    
+
     print("Thank you for using this program!")
+
 
 if __name__ == "__main__":
     main()
