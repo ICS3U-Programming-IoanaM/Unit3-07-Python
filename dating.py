@@ -12,10 +12,10 @@ def main():
     rich = input("Are you rich? (y/n): ")
     is_good_looking = False
     is_rich = False
-    yesNo = ["y", "Y", "n", "N"]
+    yes_no = ["y", "Y", "n", "N"]
 
     # valid input is entered
-    if good_looking in yesNo and rich in yesNo:
+    if good_looking in yes_no and rich in yes_no:
         # if user is good looking
         if good_looking == "y" or good_looking == "Y":
             is_good_looking = True
