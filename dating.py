@@ -12,21 +12,29 @@ def main():
     rich = input("Are you rich? (y/n): ")
     is_good_looking = False
     is_rich = False
+    yesNo = ["y", "Y", "n", "N"]
 
-    # if user is good looking
-    if good_looking == "y"  or good_looking == "Y":
-        is_good_looking = True
+    # valid input is entered
+    if good_looking in yesNo and rich in yesNo:
+        # if user is good looking
+        if good_looking == "y"  or good_looking == "Y":
+            is_good_looking = True
 
-    # if user is rich
-    if rich == "y" or rich == "Y":
-        is_rich = True
+        # if user is rich
+        if rich == "y" or rich == "Y":
+            is_rich = True
 
-    # checks if user can date grandchild
-    if is_rich or is_good_looking:
-        print("You can date our grandchild :)")
+        # checks if user can date grandchild
+        if is_rich or is_good_looking:
+            print("You can date our grandchild :)")
+        
+        else:
+            print("YOU CANNOT DATE OUR GRANDCHILD!")
     
     else:
-        print("YOU CANNOT DATE OUR GRANDCHILD!")
+        print("Please enter either y or n.")
+    
+    print("Thank you for using this program!")
 
 if __name__ == "__main__":
     main()
